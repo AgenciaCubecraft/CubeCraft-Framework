@@ -196,6 +196,38 @@
 /* --- End of NavTop (Model1) --- */
 
 
+/* --- Media Queries for Responsive --- */
+
+@media only screen and (max-width: 600px) {
+  .hide-small {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-med {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .hide-large {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-small-med {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .hide-med-large {
+    display: none !important;
+  }
+}
+/* --- End of Media Queries for Responsive --- */
 
 
 /* Responsive Grid System */
