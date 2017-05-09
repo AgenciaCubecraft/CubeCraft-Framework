@@ -129,10 +129,79 @@
 .color-d7 {background-color: #000000 !important;} .color-d8 {background-color: #000000 !important;} .color-d9 {background-color: #000000 !important;}
 .color-d10 {background-color: #000000 !important;} */
 
+
+/* TOP Navibar */
+
+/* NavTop (Base) */
+.navtop-fixed {
+  position: absolute;
+  z-index: 997;
+  left:0;
+  top:0;
+}
+.navtop-fixed nav {
+  position: fixed;
+}
+.navtop-content {  
+  left: 50%;  
+  height: 0px;
+  position: absolute;
+  list-style: none;
+  padding: 0 15px;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+
+/* --- NavTop (Model 1) --- */
+.navtop-model1 {
+  height: 140px;
+  background: #eee;
+  width:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  -webkit-transition: height 1s, line-height 1s;
+  transition: height 1s, line-height 1s;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+  0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.change-navtop-model1 {
+  height: 64px;
+}
+.navtop-model1 ul li {
+  transition: background-color .3s;
+  float: left;
+  padding: 0 12px;
+  height: 140px;
+  line-height: 140px;
+  transition: height 1s, line-height 1s;
+}
+.navtop-model1 ul li:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+.change-li {
+  height: 64px !important;
+  line-height: 64px !important;
+}
+.navtop-model1 ul li a {
+  -webkit-tap-highlight-color: transparent;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+#logo {
+  background-color: rgba(0,0,0,0) !important;
+}
+/* --- End of NavTop (Model1) --- */
+
+
+
+
 /* Responsive Grid System */
 .row{
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .row .col {
