@@ -151,11 +151,13 @@
   transform: translateX(-50%);
   margin: 0;
 }
-
+#logo {
+  background-color: rgba(0,0,0,0) !important;
+}
 
 /* --- NavTop (Model 1) --- */
 .navtop-model1 {
-  height: 140px;
+  height: 64px;
   background: #eee;
   width:100%;
   position:absolute;
@@ -166,23 +168,16 @@
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
   0 2px 10px 0 rgba(0,0,0,0.12);
 }
-.change-navtop-model1 {
-  height: 64px;
-}
 .navtop-model1 ul li {
   transition: background-color .3s;
   float: left;
   padding: 0 12px;
-  height: 140px;
-  line-height: 140px;
+  height: 64px;
+  line-height: 64px;
   transition: height 1s, line-height 1s;
 }
 .navtop-model1 ul li:hover {
   background-color: rgba(0,0,0,0.1);
-}
-.change-li {
-  height: 64px !important;
-  line-height: 64px !important;
 }
 .navtop-model1 ul li a {
   -webkit-tap-highlight-color: transparent;
@@ -190,10 +185,55 @@
   text-decoration: none;
   display: block;
 }
-#logo {
-  background-color: rgba(0,0,0,0) !important;
+.logo-nav1{
+  max-height: 40px;
 }
-/* --- End of NavTop (Model1) --- */
+/* --- End of NavTop (Model 1) --- */
+
+/* --- NavTop (Model 2) --- */
+.navtop-model2 {
+  height: 140px;
+  background: #eee;
+  width:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  -webkit-transition: height 1s, line-height 1s;
+  transition: height 1s, 1s;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+  0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.change-navtop-model2 {
+  height: 64px;
+}
+.navtop-model2 ul li {
+  transition: background-color .3s;
+  float: left;
+  padding: 0 12px;
+  height: 140px;
+  line-height: 140px;
+  transition: height 1s, line-height 1s;
+}
+.navtop-model2 ul li:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+.change-li2 {
+  height: 64px !important;
+  line-height: 64px !important;
+}
+.navtop-model2 ul li a {
+  -webkit-tap-highlight-color: transparent;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+.logo-nav2{
+  max-height: 106px;
+}
+/* --- End of NavTop (Model 2) --- */
+
+
+
 
 
 /* --- Media Queries for Responsive --- */
