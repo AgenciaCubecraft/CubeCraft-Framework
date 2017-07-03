@@ -3,7 +3,7 @@
     relogo();
     wait();
   };
-
+ 
 /* Functions on Scroll */
   $(window).on('scroll',function(){
     renav2();
@@ -19,10 +19,12 @@
           $('.navtop-model3 ul li').removeClass('change-li3')
           $('.navtop-model3 ul li a').removeClass('change-font3')
           $('.logo-nav3').removeClass('change-logo3')
+          $('.navtop-model3 ul li a').removeClass('change-op3')
         } else {
             $('nav').addClass('change-navtop-model3');
             $('.navtop-model3 ul li').addClass('change-li3');
             $('.navtop-model3 ul li a').addClass('change-font3')
+            $('.navtop-model3 ul li a').addClass('change-op3')
             $('.logo-nav3').addClass('change-logo3')
           } 
       });
@@ -54,15 +56,6 @@
           } else {
           $('nav').removeClass('change-navtop-model2');
           $('nav ul li').removeClass('change-li2');
-      }
-    }
-
-  /* Wait */
-    function wait(ms){
-      var start = new Date().getTime();
-      var end = start;
-      while(end < start + ms) {
-        end = new Date().getTime();
       }
     }
 
