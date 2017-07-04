@@ -34,10 +34,12 @@
           $('nav').removeClass('change-sidenav2')
           $('.sidenav-model2 ul li').removeClass('change-side-li2')
           $('.sidenav-model2 ul li a').removeClass('change-side-font2')
+          $('#sidelogo').removeClass('change-sidelogo')
         } else {
             $('nav').addClass('change-sidenav2')
             $('.sidenav-model2 ul li').addClass('change-side-li2')
             $('.sidenav-model2 ul li a').addClass('change-side-font2')
+            $('#sidelogo').addClass('change-sidelogo')
           } 
         });
 
