@@ -1,7 +1,6 @@
 /* Functions on Load */
   window.onload = function() {
     relogo();
-    wait();
   };
  
 /* Functions on Scroll */
@@ -12,7 +11,7 @@
 /* Functions on Click */
   $(document).ready(function(){
 
-    /* Effect for NavTop Model 2 */
+    /* Effect for NavTop Model 3 */
       $(".logo-nav3").click(function(){
         if ($('nav').hasClass('change-navtop-model3')){
           $('nav').removeClass('change-navtop-model3')
@@ -27,9 +26,23 @@
             $('.navtop-model3 ul li a').addClass('change-op3')
             $('.logo-nav3').addClass('change-logo3')
           } 
+        });
+
+    /* Effect for SideNav Model 2 */
+      $(".sidelogo").click(function(){
+        if ($('nav').hasClass('change-sidenav2')){
+          $('nav').removeClass('change-sidenav2')
+          $('.sidenav-model2 ul li').removeClass('change-side-li2')
+          $('.sidenav-model2 ul li a').removeClass('change-side-font2')
+        } else {
+            $('nav').addClass('change-sidenav2')
+            $('.sidenav-model2 ul li').addClass('change-side-li2')
+            $('.sidenav-model2 ul li a').addClass('change-side-font2')
+          } 
+        });
+
       });
 
-  });
 
 /* Functions */
 

@@ -132,164 +132,320 @@
   /* End of Color Pallete */
 /* End of Section 1 (Margin, Padding, Z-index and Collor) */
 
-/* TOP Navibar */
+/* Section 2 (All Navbar) */
 
-  /* NavTop (Base) */
-    .navtop-fixed {
-      position: absolute;
-      z-index: 997;
-      left:0;
-      top:0;
-    }
-    .navtop-fixed nav {
-      position: fixed;
-    }
-    .navtop-content {  
-      left: 50%;  
-      height: 0px;
-      position: absolute;
-      list-style: none;
-      padding: 0 15px;
-      transform: translateX(-50%);
-      margin: 0;
-    }
-    #logo {
-      background-color: rgba(0,0,0,0) !important;
-    }
-  /* End of NavTop (Base) */
+  /* TOP Navibar */
 
-  /* --- NavTop (Model 1) --- */
-    .navtop-model1 {
-      height: 64px;
-      background: #eee;
-      width:100%;
-      position:absolute;
-      left:0;
-      top:0;
-      -webkit-transition: height 1s, line-height 1s;
-      transition: height 1s, line-height 1s;
-      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
-      0 2px 10px 0 rgba(0,0,0,0.12);
-    }
-    .navtop-model1 ul li {
-      transition: background-color .3s;
-      float: left;
-      padding: 0 12px;
-      height: 64px;
-      line-height: 64px;
-      transition: height 1s, line-height 1s;
-    }
-    .navtop-model1 ul li:hover {
-      background-color: rgba(0,0,0,0.1);
-    }
-    .navtop-model1 ul li a {
-      -webkit-tap-highlight-color: transparent;
-      color: black;
-      text-decoration: none;
-      display: block;
-    }
-    .logo-nav1{
-      max-height: 40px;
-    }
-  /* --- End of NavTop (Model 1) --- */
+    /* NavTop (Base) */
+      .navtop-fixed {
+        position: absolute;
+        z-index: 997;
+        left:0;
+        top:0;
+      }
+      .navtop-fixed nav {
+        position: fixed;
+      }
+      .navtop-content {  
+        left: 50%;  
+        height: 0px;
+        position: absolute;
+        list-style: none;
+        padding: 0 15px;
+        transform: translateX(-50%);
+        margin: 0;
+      }
+      #logo {
+        background-color: rgba(0,0,0,0) !important;
+      }
+    /* End of NavTop (Base) */
 
-  /* --- NavTop (Model 2) --- */
-    .navtop-model2 {
-      height: 140px;
-      background: #eee;
-      width:100%;
-      position:absolute;
-      left:0;
-      top:0;
-      -webkit-transition: height 1s, line-height 1s;
-      transition: height 1s, 1s;
-      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
-      0 2px 10px 0 rgba(0,0,0,0.12);
-    }
-    .change-navtop-model2 {
-      height: 64px;
-    }
-    .navtop-model2 ul li {
-      transition: background-color .3s;
-      float: left;
-      padding: 0 12px;
-      height: 140px;
-      line-height: 140px;
-      transition: height 1s, line-height 1s;
-    }
-    .navtop-model2 ul li:hover {
-      background-color: rgba(0,0,0,0.1);
-    }
-    .change-li2 {
-      height: 64px !important;
-      line-height: 64px !important;
-    }
-    .navtop-model2 ul li a {
-      -webkit-tap-highlight-color: transparent;
-      color: black;
-      text-decoration: none;
-      display: block;
-    }
-    .logo-nav2{
-      max-height: 106px;
-    }
-  /* --- End of NavTop (Model 2) --- */
+    /* --- NavTop (Model 1) --- */
+      .navtop-model1 {
+        height: 64px;
+        background: #eee;
+        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
+        -webkit-transition: height 1s, line-height 1s;
+        transition: height 1s, line-height 1s;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+        0 2px 10px 0 rgba(0,0,0,0.12);
+      }
+      .navtop-model1 ul li {
+        transition: background-color .3s;
+        float: left;
+        padding: 0 12px;
+        height: 64px;
+        line-height: 64px;
+        transition: height 1s, line-height 1s;
+      }
+      .navtop-model1 ul li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .navtop-model1 ul li a {
+        -webkit-tap-highlight-color: transparent;
+        color: black;
+        text-decoration: none;
+        display: block;
+      }
+      .logo-nav1{
+        max-height: 40px;
+      }
+    /* --- End of NavTop (Model 1) --- */
 
-  /* --- NavTop (Model 3) --- */
-    .navtop-model3 {
-      height: 64px;
-      background: #eee;
-      width:0%;
-      position:absolute;
-      left:0;
-      top:0;
-      -webkit-transition: width 1s;
-      transition: width 1s;
-      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
-      0 2px 10px 0 rgba(0,0,0,0.12);
-    }
-    .change-navtop-model3{
-      width: 100%;
-    }
-    .navtop-model3 ul li {
-      transition: background-color .3s;
-      float: left;
-      padding: 0 12px;
-      height: 0px;
-      line-height: 0px;
-      transition: height 2s, line-height 2s;
-    }
-    .change-li3{
-      height: 64px !important;
-      line-height: 64px !important;
-      transition: height 2s, line-height 2s;
-    }
-    .navtop-model3 ul li:hover {
-      background-color: rgba(0,0,0,0.1);
-    }
-    .navtop-model3 ul li a {
-      opacity: 1 !important;
-      -webkit-tap-highlight-color: transparent;
-      color: black;
-      text-decoration: none;
-      font-size: 0px;
-      transition: font-size 1s;
+    /* --- NavTop (Model 2) --- */
+      .navtop-model2 {
+        height: 140px;
+        background: #eee;
+        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
+        -webkit-transition: height 1s, line-height 1s;
+        transition: height 1s, 1s;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+        0 2px 10px 0 rgba(0,0,0,0.12);
+      }
+      .change-navtop-model2 {
+        height: 64px;
+      }
+      .navtop-model2 ul li {
+        transition: background-color .3s;
+        float: left;
+        padding: 0 12px;
+        height: 140px;
+        line-height: 140px;
+        transition: height 1s, line-height 1s;
+      }
+      .navtop-model2 ul li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .change-li2 {
+        height: 64px !important;
+        line-height: 64px !important;
+      }
+      .navtop-model2 ul li a {
+        -webkit-tap-highlight-color: transparent;
+        color: black;
+        text-decoration: none;
+        display: block;
+      }
+      .logo-nav2{
+        max-height: 106px;
+      }
+    /* --- End of NavTop (Model 2) --- */
 
-    }
-    .change-font3{
-      font-size: 14px !important;
-    }
-    .logo-nav3{
-      max-height: 60px !important;
-      margin-left: 80px !important;
-      cursor: pointer;
-    }
-    .change-logo3{
-      margin-left: 0px !important;
-    }
-  /* --- End of NavTop (Model 3) --- */
+    /* --- NavTop (Model 3) --- */
+      .navtop-model3 {
+        height: 64px;
+        background: #eee;
+        width:0%;
+        position:absolute;
+        left:0;
+        top:0;
+        -webkit-transition: width 1s;
+        transition: width 1s;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+        0 2px 10px 0 rgba(0,0,0,0.12);
+      }
+      .change-navtop-model3{
+        width: 100%;
+      }
+      .navtop-model3 ul li {
+        transition: background-color .3s;
+        float: left;
+        padding: 0 12px;
+        height: 0px;
+        line-height: 0px;
+        transition: height 2s, line-height 2s;
+      }
+      .change-li3{
+        height: 64px !important;
+        line-height: 64px !important;
+        transition: height 2s, line-height 2s;
+      }
+      .navtop-model3 ul li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .navtop-model3 ul li a {
+        opacity: 1 !important;
+        -webkit-tap-highlight-color: transparent;
+        color: black;
+        text-decoration: none;
+        font-size: 0px;
+        transition: font-size 1s;
 
-/* End of TOP Navibar */
+      }
+      .change-font3{
+        font-size: 14px !important;
+      }
+      .logo-nav3{
+        max-height: 60px !important;
+        margin-left: 80px !important;
+        cursor: pointer;
+      }
+      .change-logo3{
+        margin-left: 0px !important;
+      }
+    /* --- End of NavTop (Model 3) --- */
+
+  /* End of TOP Navibar */
+
+  /* Side Navibar */
+
+    /* SideNav (Base) */
+      .sidenav-fixed {
+        position: absolute;
+        z-index: 997;
+        left:0;
+        top:0;
+      }
+      .sidenav-fixed nav {
+        position: fixed;
+      }
+      .sidenav-content {  
+        left: 0;  
+        height: 0px;
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      #logoimg {
+        background-color: rgba(0,0,0,0) !important;
+        left: 50%;
+        margin-bottom: 50px;
+        max-height: 90px;
+        max-width: 20vw;
+      }
+      .logoimg {
+        background-color: rgba(0,0,0,0) !important;
+        left: 50%;
+        height: 120px !important;
+        line-height: 120px !important;
+        padding: 10px;
+      }
+
+    /* End of SideNav (Base) */
+
+    /* --- SideNav (Model 1) --- */
+      .sidenav-model1 {
+        height: 100%;
+        background: #eee;
+        width:20%;
+        position:absolute;
+        left:auto;
+        right: auto;
+        top:0;
+        -webkit-transition: height 1s, line-height 1s;
+        transition: height 1s, line-height 1s;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+        0 2px 10px 0 rgba(0,0,0,0.12);
+      }
+      @media only screen and (max-width: 600px) {
+        .sidenav-model1 {
+          width: 40% !important;
+        } }
+      @media only screen and (min-width: 600px) and (max-width: 992px) {
+        .sidenav-model1 {
+          width: 30% !important;
+        } }
+      .sidenav-model1 ul li {
+        transition: background-color .3s;
+        float: left;
+        padding: 0 12px;
+        height: 64px;
+        line-height: 64px;
+        transition: height 1s, line-height 1s;
+        width: 100%;
+      }
+      .sidenav-model1 ul li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .sidenav-model1 ul li a {
+        -webkit-tap-highlight-color: transparent;
+        color: black;
+        text-decoration: none;
+        display: block;
+      }
+      .sidelogo{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
+      #sidelogo{
+        max-width: 20vw;
+      }
+
+    /* --- End of SideNav (Model 1) --- */
+
+    /* --- SideNav (Model 2) --- */
+      .sidenav-model2 {
+        height: 100%;
+        background: #eee;
+        width: 0%;
+        position:absolute;
+        left:auto;
+        right: auto;
+        top:0;
+        -webkit-transition: height 1s, line-height 1s;
+        transition: height 1s, line-height 1s;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+        0 2px 10px 0 rgba(0,0,0,0.12);
+      }
+      .change-sidenav2{
+        width: 30%;
+      }
+      @media only screen and (max-width: 600px) {
+        .change-sidenav2 {
+          width: 40% !important;
+        } }
+      @media only screen and (min-width: 600px) and (max-width: 992px) {
+        .schange-sidenav2 {
+          width: 30% !important;
+        } }
+      .sidenav-model2 ul li {
+        transition: background-color .3s;
+        float: left;
+        padding: 0 12px;
+        height: 64px;
+        line-height: 64px;
+        transition: height 1s, line-height 1s;
+        width: 0%;
+      }
+      .change-side-li2{
+        width: 100% !important;
+      }
+      .sidenav-model2 ul li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .sidenav-model2 ul li a {
+        -webkit-tap-highlight-color: transparent;
+        color: black;
+        text-decoration: none;
+        display: none;
+      }
+      .change-side-font2{
+        display: block !important;
+      }
+      .sidelogo{
+        width: 15vw;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
+      #sidelogo{
+        height: 10vh;
+        margin: 15px 15px;
+        cursor: pointer;
+      }
+
+    /* --- End of SideNav (Model 1) --- */
+
+  /* End od Side Navibar */
+
+/* End of Section 2 (All Navbar) */
 
 /* --- Media Queries for Responsive --- */
 
