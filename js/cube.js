@@ -1,6 +1,7 @@
 /* Functions on Load */
   window.onload = function() {
     relogo();
+    reFloatNav()
   };
  
 /* Functions on Scroll */
@@ -39,15 +40,39 @@
             $('nav').addClass('change-sidenav2')
             $('.sidenav-model2 ul li').addClass('change-side-li2')
             $('.sidenav-model2 ul li a').addClass('change-side-font2')
-            $('#sidelogo').addClass('change-sidelogo')
+            if ($('nav').hasClass('sidenav-model2')) {
+              $('#sidelogo').addClass('change-sidelogo')
+            }
           } 
         });
 
+    /* Effect for SideNav Model 3 */
+      $(".sidelogo").click(function(){
+        if ($('nav').hasClass('change-sidenav3')){
+          $('nav').removeClass('change-sidenav3')
+          $('.sidenav-model3 ul li').removeClass('change-side-li3')
+          $('.sidenav-model3 ul li a').removeClass('change-side-font3')
+          $('#sidelogo').removeClass('change-sidelogo')
+        } else {
+            $('nav').addClass('change-sidenav3')
+            $('.sidenav-model3 ul li').addClass('change-side-li3')
+            $('.sidenav-model3 ul li a').addClass('change-side-font3')
+            if ($('nav').hasClass('sidenav-model3')) {
+              $('#sidelogo').addClass('change-sidelogo')
+            }
+          } 
+        });
+
+
       });
-
-
 /* Functions */
 
+  /* Float the NavBar */
+    function reFloatNav(){
+      if ($('nav').hasClass('sidenav-model4')){
+        $('.sidenav-fixed').addClass('change-sidefixed');
+      }
+    }
 
   /* Resize the logo */
     function relogo(){

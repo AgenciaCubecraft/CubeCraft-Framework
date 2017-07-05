@@ -302,6 +302,12 @@
         left:0;
         top:0;
       }
+      .change-sidefixed{
+        float: right !important;
+        position: fixed !important;
+        margin-right: 20% !important;
+        left: calc(100vw - 20%);
+      }
       .sidenav-fixed nav {
         position: fixed;
       }
@@ -314,20 +320,33 @@
         margin: 0;
         width: 100%;
       }
-      #logoimg {
-        background-color: rgba(0,0,0,0) !important;
-        left: 50%;
-        margin-bottom: 50px;
-        max-height: 90px;
-        max-width: 20vw;
+      .sidelogo{
+        width: 15vw;
+        margin-left: 0px;
+        margin-bottom: 100px;
       }
-      .logoimg {
-        background-color: rgba(0,0,0,0) !important;
-        left: 50%;
-        height: 120px !important;
-        line-height: 120px !important;
-        padding: 10px;
+      @media only screen and (max-width: 992px) {
+        .sidelogo {
+          margin-right: 0px !important;
+        } }
+      #sidelogo{
+        height: 5vw;
+        margin-left: 15px;
+        cursor: pointer;
+        float: left;
+        transform: all 2s;
+        -webkit-transition: all 2s;
       }
+      @media only screen and (max-width: 600px) {
+        #sidelogo {
+          height: 15vw !important;
+          margin: 10px 10px !important;
+        } }
+      @media only screen and (min-width: 600px) and (max-width: 992px) {
+        #sidelogo {
+          height: 9vw !important;
+          margin: 10px 10px !important;
+        } }
 
     /* End of SideNav (Base) */
 
@@ -370,14 +389,6 @@
         color: black;
         text-decoration: none;
         display: block;
-      }
-      .sidelogo{
-        width: 50%;
-        margin: 0 auto;
-        margin-bottom: 15px;
-      }
-      #sidelogo{
-        max-width: 20vw;
       }
 
     /* --- End of SideNav (Model 1) --- */
@@ -430,43 +441,134 @@
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s, opacity 0.5s linear;
+        display: block;
       }
       .change-side-font2{
         font-size: 14px !important;
         visibility: visible !important;
         opacity: 1 !important;
+        z-index: 999;
       }
-      .sidelogo{
-        width: 15vw;
-        margin: 0 auto;
-        margin-bottom: 100px;
-      }
-      @media only screen and (max-width: 992px) {
-        .sidelogo {
-          margin-right: 0px !important;
-        } }
-      #sidelogo{
-        height: 5vw;
-        margin-left: 15px;
-        cursor: pointer;
-        float: left;
-        transform: all 2s;
-        -webkit-transition: all 2s;
+
+    /* --- End of SideNav (Model 1) --- */
+
+    /* --- SideNav (Model 3) --- */
+      .sidenav-model3 {
+        height: 0%;
+        background: #eee;
+        width: 20%;
+        position:absolute;
+        left:auto;
+        right: auto;
+        top:0;
+        -webkit-transition: height 1s;
+        transition: height 1s;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+        0 2px 10px 0 rgba(0,0,0,0.12);
       }
       @media only screen and (max-width: 600px) {
-        #sidelogo {
-          height: 15vw !important;
-          margin: 10px 10px !important;
+        .sidenav-model3 {
+          width: 40% !important;
         } }
       @media only screen and (min-width: 600px) and (max-width: 992px) {
-        #sidelogo {
-          height: 9vw !important;
-          margin: 10px 10px !important;
+        .sidenav-model3 {
+          width: 30% !important;
         } }
-      .change-sidelogo{
-        float: right !important;
+      .change-sidenav3{
+        height: 100%;
       }
-    /* --- End of SideNav (Model 1) --- */
+      .sidenav-model3 ul li {
+        transition: background-color .3s;
+        float: left;
+        padding: 0 12px;
+        height: 0px;
+        line-height: 0px;
+        transition: height 1s, line-height 1s;
+        width: 100%;
+      }
+      .change-side-li3{
+        height: 64px !important;
+        line-height: 64px !important;
+      }
+      .sidenav-model3 ul li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .sidenav-model3 ul li a {
+        -webkit-tap-highlight-color: transparent;
+        color: black;
+        text-decoration: none;
+        font-size: 0px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        display: block;
+      }
+      .change-side-font3{
+        font-size: 14px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+
+    /* --- End of SideNav (Model 3) --- */
+
+    /* --- SideNav (Model 4) --- */
+      .sidenav-model4 {
+        float: right;
+        height: 100%;
+        background: #eee;
+        width: 20%;
+        position:absolute;
+        left: auto;
+        right: auto;
+        top:0;
+        transform-origin: 100% 50%;
+        animation: main .5s;
+        -webkit-transition: width 1s;
+        transition: width 1s;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+        0 2px 10px 0 rgba(0,0,0,0.12);
+      }
+      .change-sidenav4{
+        width: 20%;
+      }
+      @media only screen and (max-width: 600px) {
+        .change-sidenav4 {
+          width: 40% !important;
+        } }
+      @media only screen and (min-width: 600px) and (max-width: 992px) {
+        .change-sidenav4 {
+          width: 30% !important;
+        } }
+      .sidenav-model4 ul li {
+        transition: background-color .3s;
+        float: right;
+        padding: 0 12px;
+        height: 64px;
+        line-height: 64px;
+        transition: width 1s;
+        width: 0%;
+      }
+      .change-side-li4{
+        width: 100% !important;
+      }
+      .sidenav-model4 ul li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .sidenav-model4 ul li a {
+        -webkit-tap-highlight-color: transparent;
+        color: black;
+        text-decoration: none;
+        font-size: 0px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+      }
+      .change-side-font4{
+        font-size: 14px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+    /* --- End of SideNav (Model 4) --- */
 
   /* End od Side Navibar */
 
