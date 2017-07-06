@@ -63,6 +63,18 @@
           } 
         });
 
+    /* Effect for Right-SideNav Model 2 */
+      $(".sidelogo-r").click(function(){
+        if ($('nav').hasClass('change-sidenav-r2')){
+          $('.change-sidenav-r2').removeClass('change-sidenav-r2')
+          $('.sidenav-model2r ul li').removeClass('change-side-li2')
+          $('.sidenav-model2r ul li a').removeClass('change-font-r2')
+        } else {
+            $('.sidenav-model2r').addClass('change-sidenav-r2')
+            $('.sidenav-model2r ul li').addClass('change-li-r2')
+            $('.sidenav-model2r ul li a').addClass('change-font-r2')
+          } 
+        });
 
       });
 

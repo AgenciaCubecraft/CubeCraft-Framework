@@ -515,6 +515,7 @@
         top:0;
         margin-right: 20%;
         left: calc(100vw - 20%);
+        direction: rtl;
       }
       @media only screen and (max-width: 600px) {
         .right-sidenav-fixed {
@@ -619,6 +620,69 @@
         float: right !important;
       }
     /* --- End of Right-SideNav (Model 1) --- */
+
+    /* --- Righ-SideNav (Model 2) --- */
+      .sidenav-model2r {
+        float: right;
+        height: 100%;
+        background: #eee;
+        width: 0%;
+        position: fixed;
+        left: auto;
+        right: 0px;
+        top:0;
+        transform-origin: 100% 50%;
+        animation: main .5s;
+        -webkit-transition: width 1s;
+        transition: width 1s;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
+        0 2px 10px 0 rgba(0,0,0,0.12);
+      }
+      .change-sidenav-r2{
+        width: 20% !important;
+      }
+      @media only screen and (max-width: 600px) {
+        .change-sidenav-r2 {
+          width: 40% !important;
+        } }
+      @media only screen and (min-width: 600px) and (max-width: 992px) {
+        .change-sidenav-r2 {
+          width: 30% !important;
+        } }
+      .sidenav-model2r ul li {
+        transition: background-color .3s;
+        float: right;
+        padding: 0 12px;
+        height: 64px;
+        line-height: 64px;
+        transition: width 1s;
+        width: 0%;
+      }
+      .change-li-r2{
+        width: 100% !important;
+      }
+      .sidenav-model2r ul li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .sidenav-model2r ul li a {
+        -webkit-tap-highlight-color: transparent;
+        color: black;
+        text-decoration: none;
+        font-size: 0px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        display: block;
+      }
+      .change-font-r2{
+        font-size: 14px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      #sidelogo-r{
+        float: right !important;
+      }
+    /* --- End of Right-SideNav (Model 2) --- */
 
   /* End od Side Navibar */
 
