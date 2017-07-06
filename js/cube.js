@@ -106,8 +106,9 @@
 
   /* Resize the logo */
     function relogo(){
-      if ($('nav').hasClass('navtop-model1')){
+      if ($('nav').hasClass('navtop-model1') || $('nav').hasClass('navbot-model1')){
         $('#toplogo').addClass('logo-nav1');
+        $('#botlogo').addClass('logo-nav1');
       }
       if ($('nav').hasClass('navtop-model2')){
         $('#toplogo').addClass('logo-nav2');

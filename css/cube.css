@@ -751,6 +751,71 @@
 
   /* End od Side Navibar */
 
+  /* Bottom Navibar */
+
+    /* NavBot (Base) */
+      .navbot-fixed {
+        position: absolute;
+        z-index: 997;
+        left:0;
+        bottom:0;
+      }
+      .navbot-fixed nav {
+        position: fixed;
+      }
+      .navbot-content {  
+        left: 50%;  
+        height: 0px;
+        position: absolute;
+        list-style: none;
+        padding: 0 15px;
+        transform: translateX(-50%);
+        margin: 0;
+      }
+      #botlogo {
+        background-color: rgba(0,0,0,0) !important;
+        margin-top: 12px !important;
+      }
+
+    /* End of NavBot (Base) */
+
+    /* --- NavBot (Model 1) --- */
+      .navbot-model1 {
+        height: 64px;
+        background: #eee;
+        width:100%;
+        position:absolute;
+        left:0;
+        bottom:0;
+        -webkit-transition: height 1s, line-height 1s;
+        transition: height 1s, line-height 1s;
+        box-shadow: 0 2px 5px 5px rgba(0,0,0,0.16),
+        0 2px 10px 10px rgba(0,0,0,0.12);
+      }
+      .navbot-model1 ul li {
+        transition: background-color .3s;
+        float: left;
+        padding: 0 12px;
+        height: 64px;
+        line-height: 64px;
+        transition: height 1s, line-height 1s;
+      }
+      .navbot-model1 ul li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .navbot-model1 ul li a {
+        -webkit-tap-highlight-color: transparent;
+        color: black;
+        text-decoration: none;
+        display: block;
+      }
+      .logo-nav1{
+        max-height: 40px;
+      }
+    /* --- End of NavTop (Model 1) --- */
+
+  /* End of Bottom Navibar */
+
 /* End of Section 2 (All Navbar) */
 
 /* --- Media Queries for Responsive --- */
