@@ -106,27 +106,43 @@
 
   /* Resize the logo */
     function relogo(){
-      if ($('nav').hasClass('navtop-model1') || $('nav').hasClass('navbot-model1')){
+      if ($('nav').hasClass('navtop-model1')){
         $('#toplogo').addClass('logo-nav1');
+      }
+      if ($('nav').hasClass('navbot-model1')){
         $('#botlogo').addClass('logo-nav1');
       }
       if ($('nav').hasClass('navtop-model2')){
         $('#toplogo').addClass('logo-nav2');
+      } 
+      if ($('nav').hasClass('navbot-model2')){
+        $('#botlogo').addClass('logo-nav2');
       } 
       if ($('nav').hasClass('navtop-model3')){
         $('#toplogo').addClass('logo-nav3');
       } 
     }
 
-  /* Effect for NavTop Model 2 */
+  /* Effect for NavTop and NavBot Model 2 */
     function renav2(){
       position = Math.round($(window).scrollTop());
         if (position > 50 && $('nav').hasClass('navtop-model2')) {
           $('.navtop-model2').addClass('change-navtop-model2');
           $('.navtop-model2 ul li').addClass('change-li2');
+          $('#toplogo').addClass('change-logo-t2');
           } else {
           $('.change-navtop-model2').removeClass('change-navtop-model2');
           $('.navtop-model2 ul li').removeClass('change-li2');
+          $('#toplogo').removeClass('change-logo-t2');
+      }
+        if (position > 50 && $('nav').hasClass('navbot-model2')) {
+          $('.navbot-model2').addClass('change-navbot-model2');
+          $('.navbot-model2 ul li').addClass('change-li-b2');
+          $('#botlogo').addClass('change-logo-b2');
+          } else {
+          $('.change-navbot-model2').removeClass('change-navbot-model2');
+          $('.navbot-model2 ul li').removeClass('change-li-b2');
+          $('#botlogo').removeClass('change-logo-b2');
       }
     }
 

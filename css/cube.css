@@ -235,6 +235,10 @@
       }
       .logo-nav2{
         max-height: 106px;
+        transition: all 1s;
+      }
+      .change-logo-t2{
+        max-height: 40px !important;
       }
     /* --- End of NavTop (Model 2) --- */
 
@@ -812,7 +816,53 @@
       .logo-nav1{
         max-height: 40px;
       }
-    /* --- End of NavTop (Model 1) --- */
+    /* --- End of NavBotp (Model 1) --- */
+
+    /* --- NavBot (Model 2) --- */
+      .navbot-model2 {
+        height: 140px;
+        background: #eee;
+        width:100%;
+        position:absolute;
+        left:0;
+        bottom:0;
+        -webkit-transition: height 1s, line-height 1s;
+        transition: height 1s, 1s;
+        box-shadow: 0 2px 5px 5px rgba(0,0,0,0.16),
+        0 2px 10px 10px rgba(0,0,0,0.12);
+      }
+      .change-navbot-model2 {
+        height: 64px;
+      }
+      .navbot-model2 ul li {
+        transition: background-color .3s;
+        float: left;
+        padding: 0 12px;
+        height: 140px;
+        line-height: 140px;
+        transition: height 1s, line-height 1s;
+      }
+      .navbot-model2 ul li:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .change-li-b2 {
+        height: 64px !important;
+        line-height: 64px !important;
+      }
+      .navbot-model2 ul li a {
+        -webkit-tap-highlight-color: transparent;
+        color: black;
+        text-decoration: none;
+        display: block;
+      }
+      .logo-nav2{
+        max-height: 106px;
+        transition: all 1s;
+      }
+      .change-logo-b2{
+        max-height: 40px !important;
+      }
+    /* --- End of NavBot (Model 2) --- */
 
   /* End of Bottom Navibar */
 
