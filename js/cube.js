@@ -89,6 +89,21 @@
           } 
         });
 
+    /* Effect for NavBot Model 3 */
+      $(".logo-nav-b3").click(function(){
+        if ($('nav').hasClass('change-navbot-model3')){
+          $('.change-navbot-model3').removeClass('change-navbot-model3')
+          $('.navbot-model3 ul li').removeClass('change-li-b3')
+          $('.navbot-model3 ul li a').removeClass('change-font-b3')
+          $('.logo-nav-b3').removeClass('change-logo-b3')
+        } else {
+            $('.navbot-model3').addClass('change-navbot-model3');
+            $('.navbot-model3 ul li').addClass('change-li-b3');
+            $('.navbot-model3 ul li a').addClass('change-font-b3')
+            $('.logo-nav-b3').addClass('change-logo-b3')
+          } 
+        });
+
       });
 
 
@@ -120,6 +135,9 @@
       } 
       if ($('nav').hasClass('navtop-model3')){
         $('#toplogo').addClass('logo-nav3');
+      } 
+      if ($('nav').hasClass('navbot-model3')){
+        $('#botlogo').addClass('logo-nav-b3');
       } 
     }
 
