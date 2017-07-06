@@ -67,12 +67,25 @@
       $(".sidelogo-r").click(function(){
         if ($('nav').hasClass('change-sidenav-r2')){
           $('.change-sidenav-r2').removeClass('change-sidenav-r2')
-          $('.sidenav-model2r ul li').removeClass('change-side-li2')
+          $('.sidenav-model2r ul li').removeClass('change-li-r2')
           $('.sidenav-model2r ul li a').removeClass('change-font-r2')
         } else {
             $('.sidenav-model2r').addClass('change-sidenav-r2')
             $('.sidenav-model2r ul li').addClass('change-li-r2')
             $('.sidenav-model2r ul li a').addClass('change-font-r2')
+          } 
+        });
+
+    /* Effect for Right-SideNav Model 3 */
+      $(".sidelogo-r").click(function(){
+        if ($('nav').hasClass('change-sidenav-r3')){
+          $('.change-sidenav-r3').removeClass('change-sidenav-r3')
+          $('.sidenav-model3r ul li').removeClass('change-li-r3')
+          $('.sidenav-model3r ul li a').removeClass('change-font-r3')
+        } else {
+            $('.sidenav-model3r').addClass('change-sidenav-r3')
+            $('.sidenav-model3r ul li').addClass('change-li-r3')
+            $('.sidenav-model3r ul li a').addClass('change-font-r3')
           } 
         });
 
@@ -83,7 +96,8 @@
 
   /* Float the NavBar */
     function reSideNav(){
-      if ( $('nav').hasClass('sidenav-model1r') || ($('nav').hasClass('sidenav-model2r')) ){
+      if ( $('nav').hasClass('sidenav-model1r') || ($('nav').hasClass('sidenav-model2r')) 
+      || ($('nav').hasClass('sidenav-model3r'))){
         $('.sidenav-fixed').addClass('right-sidenav-fixed');
         $('.sidenav-fixed').removeClass('sidenav-fixed');
         $('#sidelogo').addClass('sidelogo-r');
